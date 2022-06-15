@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* hr {
+    flex: 0 0 100%;
+    width: 10px;
+} */
+
+.logo > img {
+    width: 50%;
+    margin: 10px;
+}
+
+button {
+    background: transparent;
+}
+
+#myDropdown > a {
+    text-decoration: none;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: x-small;
+    margin: 1px;
+}
+
+#myDropdown > a:hover {
+    border-bottom: 3px solid white;
+    padding-bottom: 13px;
+}
+
+#myDropdown > a:active {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+span {
+    color: #FFFF;
+    margin-right: 2px;
+}
+
+#myDropdown {
+    background-color: #161927;
+    padding: 13px;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#page h5 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+h5 span {
+    color: #4b5068;
+}
+
+img {
+    width: 150px;
+    margin-top: 25px;
+}
+
+hr {
+    width: 310px;
+    border: none;
+    height: 1px;
+    color: #55575f;
+    background-color: #55575f;
+    margin: -4px 25px 5px 20px;
+}
+
+#dot-links {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+a div {
+    background-color: #4e5161;
+    width: 10px;
+    height: 10px;
+    margin: 7px;
+    border-radius: 50%;
+}
+
+a div:active {
+    background-color: #FFFFFF;
+}
+
+a div:hover {
+    background-color: #D0D6F9;
+}
+
+.texts h5 {
+    font-size: 10px;
+    color: #6b6e77;
+    margin: 4px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    width: 80%;
+    color: #D0D6F9;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .logo > img {
+        width: 50%;
+        margin: 20px;
+    }
+    
+    #myDropdown {
+        background-color: #161927;
+        padding: 30px;
+    }
+    
+    #myDropdown > a {
+        font-size: larger;
+    }
+
+    #page > h5 {
+        text-align: left;
+        font-size: larger;
+        margin: 70px;
+    }
+
+    #flex {
+        flex-direction: column-reverse;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .texts h5 {
+        font-size: larger;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: larger;
+        width: 70%;
+        line-height: 30px;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/* MEDIA QUERY FOR DESKTOP */
+@media only screen and (min-width:1200px) and (max-width: 1600px) {
+    body {
+        background-image: url(background-crew-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    header {
+        margin-top: 30px;
+    }
+
+    .logo > img {
+        width: 50%;
+        margin: -5px 25px;
+    }
+
+    .dd-content {
+        background-color: #161927;
+        background-image: url("desktp.jpg");
+        padding: 30px;
+        width: 50rem;
+    }
+
+    #myDropdown > a {
+        font-size: 10px;
+        margin: 0 10px 0 60px;
+        opacity: 1;
+        filter: brightness(20px);
+    }
+
+    #page > h5 {
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 180px;
+    }
+
+    #flex {
+        flex-direction: row-reverse;
+        margin-right: 200px;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -50px;
+    }
+
+    #commander {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #commander h5 {
+        text-align: left;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    #dot-links {
+        display: flex;
+        justify-content: start;
+        position: relative;
+        top: 115px;
+        left: 170px;
+    }
+}
